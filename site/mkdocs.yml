@@ -1,0 +1,29 @@
+site_name: 3D Print - Filamenter tips og tricks
+theme:
+  logo: assets/oms_hand_logo.png
+  favicon: assets/oms_hand_logo.png
+  language: da
+  name: material
+  palette: 
+    scheme: slate
+    primary: blue grey
+    accent: deep orange
+  features:
+    - navigation.tabs
+    - navigation.indexes
+    - toc.integrate
+    - navigation.top
+markdown_extensions:
+  - attr_list
+  - md_in_html
+  - def_list
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+  - tables
+nav:
+  - Start: index.md
+  - Filamenter:
+    - filamenter.md
