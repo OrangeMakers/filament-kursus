@@ -1,6 +1,6 @@
 # Start
 
-Her skal der være en kort beskrivelse
+Her skal der være en kort beskrivelse af indhold
 
 ## TODO Liste
 
