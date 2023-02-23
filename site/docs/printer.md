@@ -6,8 +6,18 @@ En printer står ikke alene, for ultimativt er printeren jo alene nogle motor, e
 
 Noget software ligger i printeren - noget er den slicer der laver GCode din printer kan bruge
 
-## Enclosure
+## Enclosure / Kabinet
 
+En enclosed printer, eller en 3D-printer med en indkapslet byggekammer, kan have flere fordele i forhold til en åben printer. Her er nogle af de vigtigste fordele:
+
+1. __Bedre temperaturkontrol__: En enclosed printer holder temperaturen mere stabil og ensartet, da varmen ikke kan undslippe så let. Dette kan forbedre printkvaliteten og reducere risikoen for warping og delaminering.
+2. __Støjdæmpning__: En enclosed printer kan reducere støjen fra printerens bevægelser og ventilatorerne, hvilket kan være en fordel i støjfølsomme omgivelser.
+3. __Støvbeskyttelse__: En enclosed printer kan beskytte printet mod støv og snavs, som kan påvirke printkvaliteten.
+4. __Øget sikkerhed__: En enclosed printer kan forhindre brugerne i at komme i kontakt med varme dele eller bevægelige dele, hvilket øger sikkerheden for brugerne.
+5. __Bedre adhæsion__: En enclosed printer kan skabe et mere konstant miljø, hvilket kan forbedre adhæsionen mellem printet og printerpladen eller printerplatformen.
+6. __Mulighed for at printe med mere krævende materialer__: En enclosed printer kan give mulighed for at printe med mere krævende materialer, der kræver højere temperaturer og mere præcis temperaturkontrol.
+
+Det er dog vigtigt at bemærke, at en enclosed printer normalt er dyrere end en åben printer, og at det kan være sværere at foretage justeringer eller ændringer på en enclosed printer på grund af den lukkede konstruktion. Derudover kan en enclosed printer kræve mere tid og arbejde for at vedligeholde og rengøre, og der er også risiko for, at en enclosed printer kan blive overophedet, hvis den ikke er korrekt ventileret.
 
 ## Nozzle (Dyse)
 
