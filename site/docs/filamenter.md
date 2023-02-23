@@ -12,6 +12,15 @@ Der findes mange former for filamenter og de fleste filamenter har nogle særlig
 * Bortskaffelse
 * Fibre
 
+## Myter om temperatur
+
+Der er mange der er meget besat af om man køre korrekt temperatur, alle temperaturer er som udgangspunkt vejledende, den måde som man måler temperaturen på - på en hjemme 3D printer er med en NTC modstand, og den er faktisk ret upræcis, derfor er det rigtigt vigtigt at du selv konkludere hvad din printer køre bedst med, du bør overveje følgende parametre
+
+- [x] Temperatur i det rum du står i
+- [x] Træk fra åbne vinduer?
+- [x] Kabinet til printer
+- [x] Er dit filament tørt - eller måske fugtigt?
+
 ## PLA
 
 | Nozzle temp                            | Bed temp                             |
