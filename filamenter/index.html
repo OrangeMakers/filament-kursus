@@ -1,0 +1,1199 @@
+
+<!doctype html>
+<html lang="da" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../mig/">
+      
+      
+        <link rel="next" href="../calibration/">
+      
+      <link rel="icon" href="../assets/oms_hand_logo.png">
+      <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.0.14">
+    
+    
+      
+        <title>Overordnet for alle - 3D Print - Filamenter tips og tricks</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.113286f1.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.a0c5b2b5.min.css">
+      
+      
+
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="blue-grey" data-md-color-accent="deep-orange">
+  
+    
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#overordnet-for-alle" class="md-skip">
+          Gå til indholdet
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="3D Print - Filamenter tips og tricks" class="md-header__button md-logo" aria-label="3D Print - Filamenter tips og tricks" data-md-component="logo">
+      
+  <img src="../assets/oms_hand_logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            3D Print - Filamenter tips og tricks
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Overordnet for alle
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Søg" placeholder="Søg" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/OrangeMakers/filament-kursus" title="Åbn arkiv" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    OrangeMakers/filament-kursus
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href=".." class="md-tabs__link">
+        Hjem
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+    
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="./" class="md-tabs__link md-tabs__link--active">
+        Filamenter
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../calibration/" class="md-tabs__link">
+        Kalibrering
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../tipstricks/" class="md-tabs__link">
+      Tips og Tricks
+    </a>
+  </li>
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="3D Print - Filamenter tips og tricks" class="md-nav__button md-logo" aria-label="3D Print - Filamenter tips og tricks" data-md-component="logo">
+      
+  <img src="../assets/oms_hand_logo.png" alt="logo">
+
+    </a>
+    3D Print - Filamenter tips og tricks
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/OrangeMakers/filament-kursus" title="Åbn arkiv" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    OrangeMakers/filament-kursus
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" >
+      
+      
+        
+          
+            
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="..">Hjem</a>
+          
+            <label for="__nav_1">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_1">
+          <span class="md-nav__icon md-icon"></span>
+          Hjem
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../printer/" class="md-nav__link">
+        Printer
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ordbog/" class="md-nav__link">
+        Ordbog
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../mig/" class="md-nav__link">
+        Hvem er jeg?
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+      
+      
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+          Filamenter
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          Filamenter
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Overordnet for alle
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Overordnet for alle
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Indholdsfortegnelse">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Indholdsfortegnelse
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#myter-om-temperatur" class="md-nav__link">
+    Myter om temperatur
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pla" class="md-nav__link">
+    PLA
+  </a>
+  
+    <nav class="md-nav" aria-label="PLA">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#indstillinger" class="md-nav__link">
+    Indstillinger
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#krav-til-printer" class="md-nav__link">
+    Krav til printer
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fordele" class="md-nav__link">
+    Fordele
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ulemper" class="md-nav__link">
+    Ulemper
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#petg" class="md-nav__link">
+    PETG
+  </a>
+  
+    <nav class="md-nav" aria-label="PETG">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#indstillinger_1" class="md-nav__link">
+    Indstillinger
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#krav-til-printer_1" class="md-nav__link">
+    Krav til printer
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fordele_1" class="md-nav__link">
+    Fordele
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ulemper_1" class="md-nav__link">
+    Ulemper
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#advarsel" class="md-nav__link">
+    Advarsel
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#abs" class="md-nav__link">
+    ABS
+  </a>
+  
+    <nav class="md-nav" aria-label="ABS">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#indstillinger_2" class="md-nav__link">
+    Indstillinger
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#krav-til-printer_2" class="md-nav__link">
+    Krav til printer
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fordele_2" class="md-nav__link">
+    Fordele
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ulemper_2" class="md-nav__link">
+    Ulemper
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sikkerheds-disclaimer" class="md-nav__link">
+    Sikkerheds Disclaimer
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#asa" class="md-nav__link">
+    ASA
+  </a>
+  
+    <nav class="md-nav" aria-label="ASA">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#indstillinger_3" class="md-nav__link">
+    Indstillinger
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#krav-til-printer_3" class="md-nav__link">
+    Krav til printer
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fordele_3" class="md-nav__link">
+    Fordele
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ulemper_3" class="md-nav__link">
+    Ulemper
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sikkerheds-disclaimer_1" class="md-nav__link">
+    Sikkerheds Disclaimer
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pa-nylon" class="md-nav__link">
+    PA (Nylon)
+  </a>
+  
+    <nav class="md-nav" aria-label="PA (Nylon)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#indstillinger_4" class="md-nav__link">
+    Indstillinger
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#krav-til-printer_4" class="md-nav__link">
+    Krav til printer
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fordele_4" class="md-nav__link">
+    Fordele
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ulemper_4" class="md-nav__link">
+    Ulemper
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tpu-gummi" class="md-nav__link">
+    TPU (Gummi)
+  </a>
+  
+    <nav class="md-nav" aria-label="TPU (Gummi)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#indstillinger_5" class="md-nav__link">
+    Indstillinger
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#krav-til-printer_5" class="md-nav__link">
+    Krav til printer
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fordele_5" class="md-nav__link">
+    Fordele
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ulemper_5" class="md-nav__link">
+    Ulemper
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fibre" class="md-nav__link">
+    Fibre
+  </a>
+  
+    <nav class="md-nav" aria-label="Fibre">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#anbefalinger" class="md-nav__link">
+    Anbefalinger
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+      
+      
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+          Kalibrering
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          Kalibrering
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../calibration/" class="md-nav__link">
+        Hvorfor er kalibrering vigtigt?
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tipstricks/" class="md-nav__link">
+        Tips og Tricks
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+  
+
+
+<h1 id="overordnet-for-alle">Overordnet for alle</h1>
+<p>Der findes mange former for filamenter og de fleste filamenter har nogle særlige ting der gør sig gældende for dem det kan blandt andet være</p>
+<ul>
+<li>Opbevaring</li>
+<li>Temperatur de skal printes ved</li>
+<li>Mekaniske egenskaber<ul>
+<li>Temperatur resistens</li>
+<li>Styrke / brud / træk</li>
+</ul>
+</li>
+<li>Særlige krav til opbevaring</li>
+<li>Fare - er det giftigt?</li>
+<li>Bortskaffelse</li>
+<li>Fibre</li>
+</ul>
+<h2 id="myter-om-temperatur">Myter om temperatur</h2>
+<p>Mange mennesker er meget optagede af, om de kører med den korrekte temperatur, men alle temperaturer er som udgangspunkt vejledende. Når man måler temperaturen på en hjemme 3D-printer, bruger man typisk en NTC-modstand, som faktisk er ret upræcis. Derfor er det meget vigtigt at konkludere, hvad der fungerer bedst på din printer, og du bør overveje følgende parametre:</p>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> Temperatur i det rum du står i</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> Træk fra åbne vinduer?</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> Kabinet til printer</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> Er dit filament tørt - eller måske fugtigt?</li>
+</ul>
+<h2 id="pla">PLA</h2>
+<p>PLA (polylactid) er en type bioplastik, der er lavet af majsstivelse eller sukkerrør, og den er kendt for sin miljøvenlige karakter og lette tilgængelighed. PLA er en termoplastisk plastik, som betyder, at den kan opvarmes og formes ved høje temperaturer.</p>
+<p>PLA plastik har en række fordele, der gør det populært til en bred vifte af anvendelser. For det første er PLA biologisk nedbrydeligt og kan omdannes til naturlige materialer, hvilket gør det til et miljøvenligt alternativ til traditionelle plastikmaterialer. Det er også stærkt, holdbart og let at arbejde med.</p>
+<p>PLA plastik er populært inden for 3D-printing på grund af dets lave smeltepunkt, hvilket gør det nemt at 3D-printe ved hjælp af Fused Deposition Modeling (FDM) teknologi. Det er også populært til fremstilling af engangsartikler, madbeholdere, kosmetikbeholdere og emballage. PLA kan fremstilles i en række farver og finish, herunder gennemsigtig, mat og glans.</p>
+<p>Selvom PLA har mange fordele, har det også nogle begrænsninger. Det er f.eks. ikke så modstandsdygtigt over for varme og kemikalier som traditionelle plastikmaterialer, og det kan brydes eller deformeres, hvis det udsættes for høje temperaturer.</p>
+<h3 id="indstillinger">Indstillinger</h3>
+<table>
+<thead>
+<tr>
+<th><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M144 64c-26.5 0-48 21.5-48 48v164.5c0 17.3-7.1 31.9-15.3 42.5C70.2 332.6 64 349.5 64 368c0 44.2 35.8 80 80 80s80-35.8 80-80c0-18.5-6.2-35.4-16.7-48.9-8.2-10.6-15.3-25.2-15.3-42.5V112c0-26.5-21.5-48-48-48zM32 112C32 50.2 82.1 0 144 0s112 50.1 112 112v164.5c0 .1.1.3.2.6.2.6.8 1.6 1.7 2.8 18.9 24.4 30.1 55 30.1 88.1 0 79.5-64.5 144-144 144S0 447.5 0 368c0-33.2 11.2-63.8 30.1-88.1.9-1.2 1.5-2.2 1.7-2.8.1-.3.2-.5.2-.6V112zm160 256c0 26.5-21.5 48-48 48s-48-21.5-48-48c0-20.9 13.4-38.7 32-45.3V208c0-8.8 7.2-16 16-16s16 7.2 16 16v114.7c18.6 6.6 32 24.4 32 45.3z"/></svg></span> Nozzle temp  <sup id="fnref9:1"><a class="footnote-ref" href="#fn:1">1</a></sup></th>
+<th><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M144 64c-26.5 0-48 21.5-48 48v164.5c0 17.3-7.1 31.9-15.3 42.5C70.2 332.6 64 349.5 64 368c0 44.2 35.8 80 80 80s80-35.8 80-80c0-18.5-6.2-35.4-16.7-48.9-8.2-10.6-15.3-25.2-15.3-42.5V112c0-26.5-21.5-48-48-48zM32 112C32 50.2 82.1 0 144 0s112 50.1 112 112v164.5c0 .1.1.3.2.6.2.6.8 1.6 1.7 2.8 18.9 24.4 30.1 55 30.1 88.1 0 79.5-64.5 144-144 144S0 447.5 0 368c0-33.2 11.2-63.8 30.1-88.1.9-1.2 1.5-2.2 1.7-2.8.1-.3.2-.5.2-.6V112zm160 256c0 26.5-21.5 48-48 48s-48-21.5-48-48c0-20.9 13.4-38.7 32-45.3V208c0-8.8 7.2-16 16-16s16 7.2 16 16v114.7c18.6 6.6 32 24.4 32 45.3z"/></svg></span> Bed temp  <sup id="fnref10:1"><a class="footnote-ref" href="#fn:1">1</a></sup></th>
+<th><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 11a1 1 0 0 0-1 1 1 1 0 0 0 1 1 1 1 0 0 0 1-1 1 1 0 0 0-1-1m.5-9c4.5 0 4.61 3.57 2.25 4.75-.99.49-1.43 1.54-1.62 2.47.48.2.9.51 1.22.91 3.7-2 7.68-1.21 7.68 2.37 0 4.5-3.57 4.6-4.75 2.23-.5-.99-1.56-1.43-2.49-1.62-.2.48-.51.89-.91 1.23 1.99 3.69 1.2 7.66-2.38 7.66-4.5 0-4.59-3.58-2.23-4.76.98-.49 1.42-1.53 1.62-2.45-.49-.2-.92-.52-1.24-.92C5.96 15.85 2 15.07 2 11.5 2 7 5.56 6.89 6.74 9.26c.5.99 1.55 1.42 2.48 1.61.19-.48.51-.9.92-1.22C8.15 5.96 8.94 2 12.5 2Z"/></svg></span> Blæser %</th>
+<th><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 16a3 3 0 0 1-3-3c0-1.12.61-2.1 1.5-2.61l9.71-5.62-5.53 9.58c-.5.98-1.51 1.65-2.68 1.65m0-13c1.81 0 3.5.5 4.97 1.32l-2.1 1.21C14 5.19 13 5 12 5a8 8 0 0 0-8 8c0 2.21.89 4.21 2.34 5.65h.01c.39.39.39 1.02 0 1.41-.39.39-1.03.39-1.42.01A9.969 9.969 0 0 1 2 13 10 10 0 0 1 12 3m10 10c0 2.76-1.12 5.26-2.93 7.07-.39.38-1.02.38-1.41-.01a.996.996 0 0 1 0-1.41A7.95 7.95 0 0 0 20 13c0-1-.19-2-.54-2.9L20.67 8C21.5 9.5 22 11.18 22 13Z"/></svg></span> Fart</th>
+<th><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M23 15v2h-1c0 1.11-.89 2-2 2s-2-.89-2-2H6c0 1.11-.89 2-2 2s-2-.89-2-2H1v-2h22Z"/></svg></span> BuildPlate</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>200-210 <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M16.5 5c1.55 0 3 .47 4.19 1.28l-1.16 2.89A4.47 4.47 0 0 0 16.5 8C14 8 12 10 12 12.5s2 4.5 4.5 4.5c1.03 0 1.97-.34 2.73-.92l1.14 2.85A7.47 7.47 0 0 1 16.5 20 7.5 7.5 0 0 1 9 12.5 7.5 7.5 0 0 1 16.5 5M6 3a3 3 0 0 1 3 3 3 3 0 0 1-3 3 3 3 0 0 1-3-3 3 3 0 0 1 3-3m0 2a1 1 0 0 0-1 1 1 1 0 0 0 1 1 1 1 0 0 0 1-1 1 1 0 0 0-1-1Z"/></svg></span></td>
+<td>40-60 <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M16.5 5c1.55 0 3 .47 4.19 1.28l-1.16 2.89A4.47 4.47 0 0 0 16.5 8C14 8 12 10 12 12.5s2 4.5 4.5 4.5c1.03 0 1.97-.34 2.73-.92l1.14 2.85A7.47 7.47 0 0 1 16.5 20 7.5 7.5 0 0 1 9 12.5 7.5 7.5 0 0 1 16.5 5M6 3a3 3 0 0 1 3 3 3 3 0 0 1-3 3 3 3 0 0 1-3-3 3 3 0 0 1 3-3m0 2a1 1 0 0 0-1 1 1 1 0 0 0 1 1 1 1 0 0 0 1-1 1 1 0 0 0-1-1Z"/></svg></span></td>
+<td>100%</td>
+<td>Så længe der er køl nok<br>er der ingen problemer</td>
+<td>PEI, Glas, næsten alt</td>
+</tr>
+</tbody>
+</table>
+<h3 id="krav-til-printer">Krav til printer</h3>
+<p>Der er som sådan ikke nogle krav til printeren - alle moderne printere der er lavet indenfor de sidste mange år kan printe PLA</p>
+<h3 id="fordele">Fordele</h3>
+<ul>
+<li>Er billigt</li>
+<li>Er nemt at printe med for en begynder</li>
+<li>Kræver ikke kabinet</li>
+<li>Kræver ikke høje temperaturer</li>
+<li>Mange bruger det så er der er meget viden på nettet</li>
+<li>Er "ikke" usundt at indhånde</li>
+</ul>
+<h3 id="ulemper">Ulemper</h3>
+<ul>
+<li>Er ikke modstandsdygtigt overfor UV (Nedbrydes i solen)</li>
+<li>Kan ikke tåle høj temperatur</li>
+<li>Brækker lige over - er ikke særlig sejt</li>
+<li>PLA har en meget lav <a href="../ordbog/#glas-transitionstemperaturen">glas transitionstemperatur</a></li>
+</ul>
+<h2 id="petg">PETG</h2>
+<p>PETG plastik (også kendt som glycol-modificeret PET eller glycol-modificeret polyester) er en type termoplastisk plastik, der er kendt for sin styrke, klarhed og modstandsdygtighed over for brud.</p>
+<p>PETG er en videreudvikling af PET (polyethylenterephthalat), som normalt bruges til at fremstille engangsflasker til drikkevarer. Ved at tilsætte glycol til PET kan man opnå PETG, som har forbedrede egenskaber, der gør det mere velegnet til industrielle applikationer.</p>
+<p>PETG plastik har en høj styrke-til-vægt-forhold, hvilket betyder, at det er stærkt og holdbart, men samtidig let og nemt at arbejde med. Det er også modstandsdygtigt over for UV-lys, kemikalier og stød, og det kan modstå gentagne bøjninger uden at sprække eller knække.</p>
+<p>På grund af disse egenskaber anvendes PETG plastik ofte til fremstilling af produkter som skilte, displays, emballage, beskyttelsesbriller og medicinske udstyrskomponenter. Det kan også 3D-printes, hvilket gør det populært blandt hobbyister og professionelle, der ønsker at skabe prototyper og færdige produkter i plastik.</p>
+<h3 id="indstillinger_1">Indstillinger</h3>
+<table>
+<thead>
+<tr>
+<th><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M144 64c-26.5 0-48 21.5-48 48v164.5c0 17.3-7.1 31.9-15.3 42.5C70.2 332.6 64 349.5 64 368c0 44.2 35.8 80 80 80s80-35.8 80-80c0-18.5-6.2-35.4-16.7-48.9-8.2-10.6-15.3-25.2-15.3-42.5V112c0-26.5-21.5-48-48-48zM32 112C32 50.2 82.1 0 144 0s112 50.1 112 112v164.5c0 .1.1.3.2.6.2.6.8 1.6 1.7 2.8 18.9 24.4 30.1 55 30.1 88.1 0 79.5-64.5 144-144 144S0 447.5 0 368c0-33.2 11.2-63.8 30.1-88.1.9-1.2 1.5-2.2 1.7-2.8.1-.3.2-.5.2-.6V112zm160 256c0 26.5-21.5 48-48 48s-48-21.5-48-48c0-20.9 13.4-38.7 32-45.3V208c0-8.8 7.2-16 16-16s16 7.2 16 16v114.7c18.6 6.6 32 24.4 32 45.3z"/></svg></span> Nozzle temp  <sup id="fnref7:1"><a class="footnote-ref" href="#fn:1">1</a></sup></th>
+<th><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M144 64c-26.5 0-48 21.5-48 48v164.5c0 17.3-7.1 31.9-15.3 42.5C70.2 332.6 64 349.5 64 368c0 44.2 35.8 80 80 80s80-35.8 80-80c0-18.5-6.2-35.4-16.7-48.9-8.2-10.6-15.3-25.2-15.3-42.5V112c0-26.5-21.5-48-48-48zM32 112C32 50.2 82.1 0 144 0s112 50.1 112 112v164.5c0 .1.1.3.2.6.2.6.8 1.6 1.7 2.8 18.9 24.4 30.1 55 30.1 88.1 0 79.5-64.5 144-144 144S0 447.5 0 368c0-33.2 11.2-63.8 30.1-88.1.9-1.2 1.5-2.2 1.7-2.8.1-.3.2-.5.2-.6V112zm160 256c0 26.5-21.5 48-48 48s-48-21.5-48-48c0-20.9 13.4-38.7 32-45.3V208c0-8.8 7.2-16 16-16s16 7.2 16 16v114.7c18.6 6.6 32 24.4 32 45.3z"/></svg></span> Bed temp  <sup id="fnref8:1"><a class="footnote-ref" href="#fn:1">1</a></sup></th>
+<th><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 11a1 1 0 0 0-1 1 1 1 0 0 0 1 1 1 1 0 0 0 1-1 1 1 0 0 0-1-1m.5-9c4.5 0 4.61 3.57 2.25 4.75-.99.49-1.43 1.54-1.62 2.47.48.2.9.51 1.22.91 3.7-2 7.68-1.21 7.68 2.37 0 4.5-3.57 4.6-4.75 2.23-.5-.99-1.56-1.43-2.49-1.62-.2.48-.51.89-.91 1.23 1.99 3.69 1.2 7.66-2.38 7.66-4.5 0-4.59-3.58-2.23-4.76.98-.49 1.42-1.53 1.62-2.45-.49-.2-.92-.52-1.24-.92C5.96 15.85 2 15.07 2 11.5 2 7 5.56 6.89 6.74 9.26c.5.99 1.55 1.42 2.48 1.61.19-.48.51-.9.92-1.22C8.15 5.96 8.94 2 12.5 2Z"/></svg></span> Blæser %</th>
+<th><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 16a3 3 0 0 1-3-3c0-1.12.61-2.1 1.5-2.61l9.71-5.62-5.53 9.58c-.5.98-1.51 1.65-2.68 1.65m0-13c1.81 0 3.5.5 4.97 1.32l-2.1 1.21C14 5.19 13 5 12 5a8 8 0 0 0-8 8c0 2.21.89 4.21 2.34 5.65h.01c.39.39.39 1.02 0 1.41-.39.39-1.03.39-1.42.01A9.969 9.969 0 0 1 2 13 10 10 0 0 1 12 3m10 10c0 2.76-1.12 5.26-2.93 7.07-.39.38-1.02.38-1.41-.01a.996.996 0 0 1 0-1.41A7.95 7.95 0 0 0 20 13c0-1-.19-2-.54-2.9L20.67 8C21.5 9.5 22 11.18 22 13Z"/></svg></span> Fart</th>
+<th><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M23 15v2h-1c0 1.11-.89 2-2 2s-2-.89-2-2H6c0 1.11-.89 2-2 2s-2-.89-2-2H1v-2h22Z"/></svg></span> BuildPlate</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>230-240 <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M16.5 5c1.55 0 3 .47 4.19 1.28l-1.16 2.89A4.47 4.47 0 0 0 16.5 8C14 8 12 10 12 12.5s2 4.5 4.5 4.5c1.03 0 1.97-.34 2.73-.92l1.14 2.85A7.47 7.47 0 0 1 16.5 20 7.5 7.5 0 0 1 9 12.5 7.5 7.5 0 0 1 16.5 5M6 3a3 3 0 0 1 3 3 3 3 0 0 1-3 3 3 3 0 0 1-3-3 3 3 0 0 1 3-3m0 2a1 1 0 0 0-1 1 1 1 0 0 0 1 1 1 1 0 0 0 1-1 1 1 0 0 0-1-1Z"/></svg></span></td>
+<td>70-80 <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M16.5 5c1.55 0 3 .47 4.19 1.28l-1.16 2.89A4.47 4.47 0 0 0 16.5 8C14 8 12 10 12 12.5s2 4.5 4.5 4.5c1.03 0 1.97-.34 2.73-.92l1.14 2.85A7.47 7.47 0 0 1 16.5 20 7.5 7.5 0 0 1 9 12.5 7.5 7.5 0 0 1 16.5 5M6 3a3 3 0 0 1 3 3 3 3 0 0 1-3 3 3 3 0 0 1-3-3 3 3 0 0 1 3-3m0 2a1 1 0 0 0-1 1 1 1 0 0 0 1 1 1 1 0 0 0 1-1 1 1 0 0 0-1-1Z"/></svg></span></td>
+<td>20%</td>
+<td>Gerne hurtigt da PETG kan<br>ooze ret kraftigt</td>
+<td>PEI men med noget på<br>Textured plate</td>
+</tr>
+</tbody>
+</table>
+<h3 id="krav-til-printer_1">Krav til printer</h3>
+<p>Der er som sådan ikke nogle krav til printeren - alle moderne printere der er lavet indenfor de sidste mange år kan printe PETG, det anbefales dog man som minimum har en silikone sock på nozzle, da PETG er ret klistreret, alternativ kan man smøre noget <a href="https://www.bondtech.se/product/plastic-repellent-paint/" target="_blank">teflon maling</a> på som vist herunder</p>
+<p><img alt="PTFE Maling" src="../assets/images/ptfemaling.png" /></p>
+<p>Det kan også anbefales du bruger et <a href="../tipstricks/#separator">separator middel</a> produkt især hvis du køre på glasplader</p>
+<h3 id="fordele_1">Fordele</h3>
+<ul>
+<li>Er rigtig sejt, dvs. bøjer før det knækker</li>
+<li>Billigt at få fat i</li>
+<li>Kan tåle højere temperatur før det deformere</li>
+</ul>
+<h3 id="ulemper_1">Ulemper</h3>
+<ul>
+<li>Kræver det er tørt!</li>
+<li>Printer skal være ret godt justeret ind da du ellers blot vil ende med en stor klump på din nozzle</li>
+<li>PETG har en lidt bedre <a href="../ordbog/#glas-transitionstemperaturen">glas transitionstemperatur</a> end <a href="#pla">PLA</a> - man stadig ikke på højde med hverken <a href="#abs">ABS</a> eller <a href="#asa">ASA</a></li>
+</ul>
+<h3 id="advarsel">Advarsel <img alt="⚠" class="twemoji" src="https://cdnjs.cloudflare.com/ajax/libs/twemoji/14.0.2/svg/26a0.svg" title=":warning:" /></h3>
+<ul>
+<li>Print ALDRIG PETG direkte på en glasplade, du skal have en eller anden seperator på for at være sikker på du kan få det af når det er koldt.</li>
+</ul>
+<h2 id="abs">ABS</h2>
+<p>ABS (akrylonitril-butadien-styren) plastik er en termoplastisk polymer, der er kendt for sin styrke, stivhed og modstandsdygtighed over for stød og varme. ABS plastik er sammensat af tre forskellige monomerer: akrylonitril, butadien og styren.</p>
+<p>ABS plastik har en række egenskaber, der gør det populært til en bred vifte af anvendelser. Det er stærkt og holdbart, og det kan modstå stød og varme, hvilket gør det velegnet til produktion af dele og komponenter til maskiner, biler, elektronik og legetøj. Det er også modstandsdygtigt over for kemikalier og kan male og overfladebehandles nemt.</p>
+<p>ABS plastik har også nogle ulemper. Det kan være vanskeligt at 3D-printe, fordi det kræver en højere temperatur og er mere modtageligt for warping og splitting end andre materialer som <a href="#pla">PLA</a>. Det afgiver også en lugt, når det smelter, og dampene kan være skadelige, hvis de indåndes over længere tid. Derfor anbefales det normalt at 3D-printe ABS i et rum med god ventilation.</p>
+<p>Alt i alt er ABS plastik en alsidig plasttype med en række egenskaber, der gør det velegnet til en bred vifte af applikationer, herunder 3D-printning, mekaniske dele og elektronik.</p>
+<h3 id="indstillinger_2">Indstillinger</h3>
+<table>
+<thead>
+<tr>
+<th><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M144 64c-26.5 0-48 21.5-48 48v164.5c0 17.3-7.1 31.9-15.3 42.5C70.2 332.6 64 349.5 64 368c0 44.2 35.8 80 80 80s80-35.8 80-80c0-18.5-6.2-35.4-16.7-48.9-8.2-10.6-15.3-25.2-15.3-42.5V112c0-26.5-21.5-48-48-48zM32 112C32 50.2 82.1 0 144 0s112 50.1 112 112v164.5c0 .1.1.3.2.6.2.6.8 1.6 1.7 2.8 18.9 24.4 30.1 55 30.1 88.1 0 79.5-64.5 144-144 144S0 447.5 0 368c0-33.2 11.2-63.8 30.1-88.1.9-1.2 1.5-2.2 1.7-2.8.1-.3.2-.5.2-.6V112zm160 256c0 26.5-21.5 48-48 48s-48-21.5-48-48c0-20.9 13.4-38.7 32-45.3V208c0-8.8 7.2-16 16-16s16 7.2 16 16v114.7c18.6 6.6 32 24.4 32 45.3z"/></svg></span> Nozzle temp  <sup id="fnref5:1"><a class="footnote-ref" href="#fn:1">1</a></sup></th>
+<th><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M144 64c-26.5 0-48 21.5-48 48v164.5c0 17.3-7.1 31.9-15.3 42.5C70.2 332.6 64 349.5 64 368c0 44.2 35.8 80 80 80s80-35.8 80-80c0-18.5-6.2-35.4-16.7-48.9-8.2-10.6-15.3-25.2-15.3-42.5V112c0-26.5-21.5-48-48-48zM32 112C32 50.2 82.1 0 144 0s112 50.1 112 112v164.5c0 .1.1.3.2.6.2.6.8 1.6 1.7 2.8 18.9 24.4 30.1 55 30.1 88.1 0 79.5-64.5 144-144 144S0 447.5 0 368c0-33.2 11.2-63.8 30.1-88.1.9-1.2 1.5-2.2 1.7-2.8.1-.3.2-.5.2-.6V112zm160 256c0 26.5-21.5 48-48 48s-48-21.5-48-48c0-20.9 13.4-38.7 32-45.3V208c0-8.8 7.2-16 16-16s16 7.2 16 16v114.7c18.6 6.6 32 24.4 32 45.3z"/></svg></span> Bed temp  <sup id="fnref6:1"><a class="footnote-ref" href="#fn:1">1</a></sup></th>
+<th><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 11a1 1 0 0 0-1 1 1 1 0 0 0 1 1 1 1 0 0 0 1-1 1 1 0 0 0-1-1m.5-9c4.5 0 4.61 3.57 2.25 4.75-.99.49-1.43 1.54-1.62 2.47.48.2.9.51 1.22.91 3.7-2 7.68-1.21 7.68 2.37 0 4.5-3.57 4.6-4.75 2.23-.5-.99-1.56-1.43-2.49-1.62-.2.48-.51.89-.91 1.23 1.99 3.69 1.2 7.66-2.38 7.66-4.5 0-4.59-3.58-2.23-4.76.98-.49 1.42-1.53 1.62-2.45-.49-.2-.92-.52-1.24-.92C5.96 15.85 2 15.07 2 11.5 2 7 5.56 6.89 6.74 9.26c.5.99 1.55 1.42 2.48 1.61.19-.48.51-.9.92-1.22C8.15 5.96 8.94 2 12.5 2Z"/></svg></span> Blæser %</th>
+<th><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 16a3 3 0 0 1-3-3c0-1.12.61-2.1 1.5-2.61l9.71-5.62-5.53 9.58c-.5.98-1.51 1.65-2.68 1.65m0-13c1.81 0 3.5.5 4.97 1.32l-2.1 1.21C14 5.19 13 5 12 5a8 8 0 0 0-8 8c0 2.21.89 4.21 2.34 5.65h.01c.39.39.39 1.02 0 1.41-.39.39-1.03.39-1.42.01A9.969 9.969 0 0 1 2 13 10 10 0 0 1 12 3m10 10c0 2.76-1.12 5.26-2.93 7.07-.39.38-1.02.38-1.41-.01a.996.996 0 0 1 0-1.41A7.95 7.95 0 0 0 20 13c0-1-.19-2-.54-2.9L20.67 8C21.5 9.5 22 11.18 22 13Z"/></svg></span> Fart</th>
+<th><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M23 15v2h-1c0 1.11-.89 2-2 2s-2-.89-2-2H6c0 1.11-.89 2-2 2s-2-.89-2-2H1v-2h22Z"/></svg></span> BuildPlate</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>240-260 <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M16.5 5c1.55 0 3 .47 4.19 1.28l-1.16 2.89A4.47 4.47 0 0 0 16.5 8C14 8 12 10 12 12.5s2 4.5 4.5 4.5c1.03 0 1.97-.34 2.73-.92l1.14 2.85A7.47 7.47 0 0 1 16.5 20 7.5 7.5 0 0 1 9 12.5 7.5 7.5 0 0 1 16.5 5M6 3a3 3 0 0 1 3 3 3 3 0 0 1-3 3 3 3 0 0 1-3-3 3 3 0 0 1 3-3m0 2a1 1 0 0 0-1 1 1 1 0 0 0 1 1 1 1 0 0 0 1-1 1 1 0 0 0-1-1Z"/></svg></span></td>
+<td>100-110 <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M16.5 5c1.55 0 3 .47 4.19 1.28l-1.16 2.89A4.47 4.47 0 0 0 16.5 8C14 8 12 10 12 12.5s2 4.5 4.5 4.5c1.03 0 1.97-.34 2.73-.92l1.14 2.85A7.47 7.47 0 0 1 16.5 20 7.5 7.5 0 0 1 9 12.5 7.5 7.5 0 0 1 16.5 5M6 3a3 3 0 0 1 3 3 3 3 0 0 1-3 3 3 3 0 0 1-3-3 3 3 0 0 1 3-3m0 2a1 1 0 0 0-1 1 1 1 0 0 0 1 1 1 1 0 0 0 1-1 1 1 0 0 0-1-1Z"/></svg></span></td>
+<td>10-20%</td>
+<td>Så hurtigt din printer kan</td>
+<td>PEI, enten smooth eller textured</td>
+</tr>
+</tbody>
+</table>
+<h3 id="krav-til-printer_2">Krav til printer</h3>
+<ul>
+<li>Enclosure</li>
+</ul>
+<h3 id="fordele_2">Fordele</h3>
+<ul>
+<li>Du kan nemt eftebehandle ABS, det er nemt at bore i, du kan slibe på det og male på det uden større udfordringer</li>
+<li>Har en meget høj <a href="../ordbog/#glas-transitionstemperaturen">glas transitionstemperatur</a> - så kan modstå meget varme</li>
+</ul>
+<h3 id="ulemper_2">Ulemper</h3>
+<ul>
+<li>Kræver enclosure, da ABS [warper] ret meget, det er bedst hvis du er over 50 <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M16.5 5c1.55 0 3 .47 4.19 1.28l-1.16 2.89A4.47 4.47 0 0 0 16.5 8C14 8 12 10 12 12.5s2 4.5 4.5 4.5c1.03 0 1.97-.34 2.73-.92l1.14 2.85A7.47 7.47 0 0 1 16.5 20 7.5 7.5 0 0 1 9 12.5 7.5 7.5 0 0 1 16.5 5M6 3a3 3 0 0 1 3 3 3 3 0 0 1-3 3 3 3 0 0 1-3-3 3 3 0 0 1 3-3m0 2a1 1 0 0 0-1 1 1 1 0 0 0 1 1 1 1 0 0 0 1-1 1 1 0 0 0-1-1Z"/></svg></span> for at undgå printet slipper pladen</li>
+<li>Er usundt at indånde i længere tid</li>
+<li>Kræver høj temperatur på nozzle derfor kan det ikke printes af printere hvor toolhead er lavet af PETG / ABS som f.eks. <a href="https://www.prusa3d.com/">Prusa</a>, men du vil kunne printe det med en <a href="https://vorondesign.com/">Voron</a> eller <a href="https://bambulab.com/en">Bambu Labs</a> printer uden problemer ABS</li>
+</ul>
+<h3 id="sikkerheds-disclaimer"><img alt="⚠" class="twemoji" src="https://cdnjs.cloudflare.com/ajax/libs/twemoji/14.0.2/svg/26a0.svg" title=":warning:" /> Sikkerheds Disclaimer</h3>
+<p>ABS-plastik er generelt betragtet som sikker at bruge i hjemmeprintere, men der er nogle sundhedsrisici, som brugere skal være opmærksomme på.</p>
+<p>ABS-plastik frigiver dampe, når det opvarmes og smelter, og disse dampe kan være skadelige at indånde i større mængder over længere tid. De kan forårsage irritation af øjne, næse og hals, hovedpine, kvalme og svimmelhed. I ekstreme tilfælde kan indånding af ABS-dampe føre til sundhedsmæssige problemer som kræft og astma. Derfor er det vigtigt at have ordentlig ventilation, når man arbejder med ABS-plastik.</p>
+<p>Desuden kan ABS-plastik afgive en vis mængde støv og partikler, når det bearbejdes eller slibes. Disse partikler kan irritere øjne, næse og hals og kan være skadelige, hvis de indåndes i store mængder.</p>
+<p>For at reducere sundhedsrisikoen ved brug af ABS-plastik bør man altid anvende ordentlig ventilation, undgå indånding af dampe og partikler, og undgå at udsætte sig selv for materialet i længere tid. Det anbefales også at bruge personligt beskyttelsesudstyr, såsom handsker, øjenbeskyttelse og åndedrætsværn, når man arbejder med ABS-plastik.</p>
+<p>Generelt set kan ABS-plastik være sikkert at bruge i hjemmeprintere, så længe man tager de nødvendige forholdsregler for at beskytte sig selv mod skadelige dampe og partikler.</p>
+<h2 id="asa">ASA</h2>
+<p>Både <a href="#abs">ABS</a> (akrylonitril-butadien-styren) og ASA (akrylonitril-styren-acrylester) er termoplastiske polymerer, der anvendes til fremstilling af stærke, holdbare dele og komponenter. De er begge modstandsdygtige over for stød og vejrforhold og har en lignende sammensætning, men der er nogle vigtige forskelle mellem de to materialer.</p>
+<p>En af de største forskelle mellem <a href="#abs">ABS</a> og ASA er, at ASA er mere modstandsdygtig over for vejrpåvirkninger end <a href="#abs">ABS</a>. ASA er mere UV-stabil end ABS, og det bevarer sin farve og overfladebehandling bedre i sollys og ekstreme temperaturer. Derfor er ASA ofte foretrukket til udendørs anvendelser, hvor materialet vil blive udsat for sollys og andre vejrforhold.</p>
+<p>En anden forskel mellem <a href="#abs">ABS</a> og ASA er, at ASA normalt er mere kemisk modstandsdygtig end ABS. ASA kan modstå kemikalier som alkohol, benzin og olie bedre end ABS, og det er mindre modtageligt for misfarvning eller deformation, når det udsættes for kemikalier.</p>
+<p>En tredje forskel er, at ASA normalt er mere glansfuldt end ABS og giver en glattere overfladefinish. Dette gør ASA til et populært valg til applikationer, hvor udseendet er vigtigt, såsom bildele og elektronik.</p>
+<p>I forhold til 3D-printning kan ASA være lidt mere vanskeligt at printe end ABS, da det kræver en højere temperatur og mere avancerede printerindstillinger. Dog er ASA mere modstandsdygtig over for warping og splitting end <a href="#abs">ABS</a> og er derfor et bedre valg til større print.</p>
+<p>I alt er både <a href="#abs">ABS</a> og ASA populære materialer til fremstilling af dele og komponenter, men ASA er normalt mere velegnet til udendørs applikationer, hvor det er udsat for sollys og andre vejrforhold, mens ABS er mere alsidigt og kan anvendes i en bred vifte af applikationer.</p>
+<h3 id="indstillinger_3">Indstillinger</h3>
+<p>Samme som <a href="#abs">ABS</a></p>
+<h3 id="krav-til-printer_3">Krav til printer</h3>
+<p>Samme som <a href="#abs">ABS</a>, dog gerne endnu højere temperatur på kabinet</p>
+<h3 id="fordele_3">Fordele</h3>
+<p>Samme som <a href="#abs">ABS</a> dog med følgende yderligere fordele</p>
+<ul>
+<li>Bedre til at modstå UV lys</li>
+<li>Warper mindre end <a href="#abs">ABS</a></li>
+</ul>
+<h3 id="ulemper_3">Ulemper</h3>
+<p>Samme som <a href="#abs">ABS</a></p>
+<h3 id="sikkerheds-disclaimer_1"><img alt="⚠" class="twemoji" src="https://cdnjs.cloudflare.com/ajax/libs/twemoji/14.0.2/svg/26a0.svg" title=":warning:" /> Sikkerheds Disclaimer</h3>
+<p>ABS-plastik er generelt betragtet som sikker at bruge i hjemmeprintere, men der er nogle sundhedsrisici, som brugere skal være opmærksomme på.</p>
+<p>ABS-plastik frigiver dampe, når det opvarmes og smelter, og disse dampe kan være skadelige at indånde i større mængder over længere tid. De kan forårsage irritation af øjne, næse og hals, hovedpine, kvalme og svimmelhed. I ekstreme tilfælde kan indånding af ABS-dampe føre til sundhedsmæssige problemer som kræft og astma. Derfor er det vigtigt at have ordentlig ventilation, når man arbejder med ABS-plastik.</p>
+<p>Desuden kan ABS-plastik afgive en vis mængde støv og partikler, når det bearbejdes eller slibes. Disse partikler kan irritere øjne, næse og hals og kan være skadelige, hvis de indåndes i store mængder.</p>
+<p>For at reducere sundhedsrisikoen ved brug af ABS-plastik bør man altid anvende ordentlig ventilation, undgå indånding af dampe og partikler, og undgå at udsætte sig selv for materialet i længere tid. Det anbefales også at bruge personligt beskyttelsesudstyr, såsom handsker, øjenbeskyttelse og åndedrætsværn, når man arbejder med ABS-plastik.</p>
+<p>Generelt set kan ABS-plastik være sikkert at bruge i hjemmeprintere, så længe man tager de nødvendige forholdsregler for at beskytte sig selv mod skadelige dampe og partikler.</p>
+<h2 id="pa-nylon">PA (Nylon)</h2>
+<p>PA (Polyamid), også kendt som nylon, er en type termoplastisk plastik, der er kendt for sin styrke, holdbarhed og modstandsdygtighed over for slid. PA plastik er en polymer, der er sammensat af enheder af amidbindinger.</p>
+<p>PA plastik har en række egenskaber, der gør det velegnet til en bred vifte af anvendelser. Det er stærkt og slidstærkt og kan modstå gentagne belastninger uden at bryde eller miste sin form. Det er også modstandsdygtigt over for kemikalier, varme og korrosion, hvilket gør det velegnet til anvendelser i miljøer, hvor der er høje krav til holdbarhed og modstandsdygtighed.</p>
+<p>PA plastik er populær i en række forskellige applikationer, herunder bil- og flydele, elektronik, legetøj og sportsudstyr. Det kan også 3D-printes, hvilket gør det populært blandt hobbyister og professionelle, der ønsker at skabe prototyper og færdige produkter i plastik.</p>
+<p>I forhold til 3D-printing kan PA være vanskeligere at printe end traditionelle plastikmaterialer på grund af dets høje smeltepunkt og tendens til at absorbere fugt fra luften, hvilket kan påvirke printkvaliteten og holdbarheden. Derfor kræver det ofte en speciel tørring og forberedelse af filamentet, inden det kan 3D-printes.</p>
+<p>I alt er PA plastik en stærk og alsidig termoplastisk plastik, der er velegnet til mange forskellige applikationer, der kræver holdbarhed, modstandsdygtighed over for slid og kemikalier og høj styrke.</p>
+<p>PA er f.eks. det materiale snoren i din kantklipper er lavet af.</p>
+<h3 id="indstillinger_4">Indstillinger</h3>
+<table>
+<thead>
+<tr>
+<th><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M144 64c-26.5 0-48 21.5-48 48v164.5c0 17.3-7.1 31.9-15.3 42.5C70.2 332.6 64 349.5 64 368c0 44.2 35.8 80 80 80s80-35.8 80-80c0-18.5-6.2-35.4-16.7-48.9-8.2-10.6-15.3-25.2-15.3-42.5V112c0-26.5-21.5-48-48-48zM32 112C32 50.2 82.1 0 144 0s112 50.1 112 112v164.5c0 .1.1.3.2.6.2.6.8 1.6 1.7 2.8 18.9 24.4 30.1 55 30.1 88.1 0 79.5-64.5 144-144 144S0 447.5 0 368c0-33.2 11.2-63.8 30.1-88.1.9-1.2 1.5-2.2 1.7-2.8.1-.3.2-.5.2-.6V112zm160 256c0 26.5-21.5 48-48 48s-48-21.5-48-48c0-20.9 13.4-38.7 32-45.3V208c0-8.8 7.2-16 16-16s16 7.2 16 16v114.7c18.6 6.6 32 24.4 32 45.3z"/></svg></span> Nozzle temp  <sup id="fnref3:1"><a class="footnote-ref" href="#fn:1">1</a></sup></th>
+<th><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M144 64c-26.5 0-48 21.5-48 48v164.5c0 17.3-7.1 31.9-15.3 42.5C70.2 332.6 64 349.5 64 368c0 44.2 35.8 80 80 80s80-35.8 80-80c0-18.5-6.2-35.4-16.7-48.9-8.2-10.6-15.3-25.2-15.3-42.5V112c0-26.5-21.5-48-48-48zM32 112C32 50.2 82.1 0 144 0s112 50.1 112 112v164.5c0 .1.1.3.2.6.2.6.8 1.6 1.7 2.8 18.9 24.4 30.1 55 30.1 88.1 0 79.5-64.5 144-144 144S0 447.5 0 368c0-33.2 11.2-63.8 30.1-88.1.9-1.2 1.5-2.2 1.7-2.8.1-.3.2-.5.2-.6V112zm160 256c0 26.5-21.5 48-48 48s-48-21.5-48-48c0-20.9 13.4-38.7 32-45.3V208c0-8.8 7.2-16 16-16s16 7.2 16 16v114.7c18.6 6.6 32 24.4 32 45.3z"/></svg></span> Bed temp  <sup id="fnref4:1"><a class="footnote-ref" href="#fn:1">1</a></sup></th>
+<th><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 11a1 1 0 0 0-1 1 1 1 0 0 0 1 1 1 1 0 0 0 1-1 1 1 0 0 0-1-1m.5-9c4.5 0 4.61 3.57 2.25 4.75-.99.49-1.43 1.54-1.62 2.47.48.2.9.51 1.22.91 3.7-2 7.68-1.21 7.68 2.37 0 4.5-3.57 4.6-4.75 2.23-.5-.99-1.56-1.43-2.49-1.62-.2.48-.51.89-.91 1.23 1.99 3.69 1.2 7.66-2.38 7.66-4.5 0-4.59-3.58-2.23-4.76.98-.49 1.42-1.53 1.62-2.45-.49-.2-.92-.52-1.24-.92C5.96 15.85 2 15.07 2 11.5 2 7 5.56 6.89 6.74 9.26c.5.99 1.55 1.42 2.48 1.61.19-.48.51-.9.92-1.22C8.15 5.96 8.94 2 12.5 2Z"/></svg></span> Blæser %</th>
+<th><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 16a3 3 0 0 1-3-3c0-1.12.61-2.1 1.5-2.61l9.71-5.62-5.53 9.58c-.5.98-1.51 1.65-2.68 1.65m0-13c1.81 0 3.5.5 4.97 1.32l-2.1 1.21C14 5.19 13 5 12 5a8 8 0 0 0-8 8c0 2.21.89 4.21 2.34 5.65h.01c.39.39.39 1.02 0 1.41-.39.39-1.03.39-1.42.01A9.969 9.969 0 0 1 2 13 10 10 0 0 1 12 3m10 10c0 2.76-1.12 5.26-2.93 7.07-.39.38-1.02.38-1.41-.01a.996.996 0 0 1 0-1.41A7.95 7.95 0 0 0 20 13c0-1-.19-2-.54-2.9L20.67 8C21.5 9.5 22 11.18 22 13Z"/></svg></span> Fart</th>
+<th><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M23 15v2h-1c0 1.11-.89 2-2 2s-2-.89-2-2H6c0 1.11-.89 2-2 2s-2-.89-2-2H1v-2h22Z"/></svg></span> BuildPlate</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>230-240 <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M16.5 5c1.55 0 3 .47 4.19 1.28l-1.16 2.89A4.47 4.47 0 0 0 16.5 8C14 8 12 10 12 12.5s2 4.5 4.5 4.5c1.03 0 1.97-.34 2.73-.92l1.14 2.85A7.47 7.47 0 0 1 16.5 20 7.5 7.5 0 0 1 9 12.5 7.5 7.5 0 0 1 16.5 5M6 3a3 3 0 0 1 3 3 3 3 0 0 1-3 3 3 3 0 0 1-3-3 3 3 0 0 1 3-3m0 2a1 1 0 0 0-1 1 1 1 0 0 0 1 1 1 1 0 0 0 1-1 1 1 0 0 0-1-1Z"/></svg></span></td>
+<td>80-90 <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M16.5 5c1.55 0 3 .47 4.19 1.28l-1.16 2.89A4.47 4.47 0 0 0 16.5 8C14 8 12 10 12 12.5s2 4.5 4.5 4.5c1.03 0 1.97-.34 2.73-.92l1.14 2.85A7.47 7.47 0 0 1 16.5 20 7.5 7.5 0 0 1 9 12.5 7.5 7.5 0 0 1 16.5 5M6 3a3 3 0 0 1 3 3 3 3 0 0 1-3 3 3 3 0 0 1-3-3 3 3 0 0 1 3-3m0 2a1 1 0 0 0-1 1 1 1 0 0 0 1 1 1 1 0 0 0 1-1 1 1 0 0 0-1-1Z"/></svg></span></td>
+<td>50%</td>
+<td>Print LANGSOMT!</td>
+<td>Virker på de fleste overflader<br>dog bedst med f.eks. <a href="../tipstricks/#bindemiddel">Dimafix</a></td>
+</tr>
+</tbody>
+</table>
+<h3 id="krav-til-printer_4">Krav til printer</h3>
+<p>Der er ikke nogle specielle krav til at printe Nylon på din printer</p>
+<h3 id="fordele_4">Fordele</h3>
+<ul>
+<li>MEGET stærkt materiale, er super sejt - kan næsten ikke knække</li>
+</ul>
+<h3 id="ulemper_4">Ulemper</h3>
+<ul>
+<li>Suger [fugtighed], indenfor 30-60 minutter vil der være så meget fugt i det fra det rum det er i</li>
+</ul>
+<h2 id="tpu-gummi">TPU (Gummi)</h2>
+<p>TPU (Thermoplastic Polyurethane) plastik er en type termoplastisk elastomer, der er kendt for sin fleksibilitet, modstandsdygtighed over for stød og slid og alsidighed. TPU plastik er sammensat af polyurethan, som er en polymer, der består af enheder af urethanbindinger.</p>
+<p>TPU plastik har en række egenskaber, der gør det velegnet til en bred vifte af applikationer. Det er meget fleksibelt og kan bøjes, strækkes og komprimeres gentagne gange uden at sprække eller miste sin form. Det er også modstandsdygtigt over for stød og slid, hvilket gør det velegnet til applikationer, hvor materialet vil blive udsat for belastning og gnidning.</p>
+<p>TPU plastik kan fremstilles i en række forskellige hårdheder og farver, hvilket gør det alsidigt og brugbart i mange forskellige applikationer. Det bruges ofte til produktion af sko og støvler, sportsudstyr, elektronik tilfælde og dæksler, medicinske udstyrskomponenter, og det er også populært i 3D-printing på grund af dets fleksibilitet og modstandsdygtighed.</p>
+<p>I forhold til 3D-printing kan TPU være vanskeligere at printe end traditionelle plastikmaterialer på grund af dets fleksibilitet. Det kan kræve specielle indstillinger på en 3D-printer, herunder lavere hastighed, højere temperatur og brug af en printplatform med bedre greb.</p>
+<p>I alt er TPU plastik en alsidig og holdbar elastomer, der er velegnet til mange forskellige applikationer, der kræver fleksibilitet, slidstyrke og modstandsdygtighed over for stød.</p>
+<h3 id="indstillinger_5">Indstillinger</h3>
+<table>
+<thead>
+<tr>
+<th><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M144 64c-26.5 0-48 21.5-48 48v164.5c0 17.3-7.1 31.9-15.3 42.5C70.2 332.6 64 349.5 64 368c0 44.2 35.8 80 80 80s80-35.8 80-80c0-18.5-6.2-35.4-16.7-48.9-8.2-10.6-15.3-25.2-15.3-42.5V112c0-26.5-21.5-48-48-48zM32 112C32 50.2 82.1 0 144 0s112 50.1 112 112v164.5c0 .1.1.3.2.6.2.6.8 1.6 1.7 2.8 18.9 24.4 30.1 55 30.1 88.1 0 79.5-64.5 144-144 144S0 447.5 0 368c0-33.2 11.2-63.8 30.1-88.1.9-1.2 1.5-2.2 1.7-2.8.1-.3.2-.5.2-.6V112zm160 256c0 26.5-21.5 48-48 48s-48-21.5-48-48c0-20.9 13.4-38.7 32-45.3V208c0-8.8 7.2-16 16-16s16 7.2 16 16v114.7c18.6 6.6 32 24.4 32 45.3z"/></svg></span> Nozzle temp  <sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup></th>
+<th><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M144 64c-26.5 0-48 21.5-48 48v164.5c0 17.3-7.1 31.9-15.3 42.5C70.2 332.6 64 349.5 64 368c0 44.2 35.8 80 80 80s80-35.8 80-80c0-18.5-6.2-35.4-16.7-48.9-8.2-10.6-15.3-25.2-15.3-42.5V112c0-26.5-21.5-48-48-48zM32 112C32 50.2 82.1 0 144 0s112 50.1 112 112v164.5c0 .1.1.3.2.6.2.6.8 1.6 1.7 2.8 18.9 24.4 30.1 55 30.1 88.1 0 79.5-64.5 144-144 144S0 447.5 0 368c0-33.2 11.2-63.8 30.1-88.1.9-1.2 1.5-2.2 1.7-2.8.1-.3.2-.5.2-.6V112zm160 256c0 26.5-21.5 48-48 48s-48-21.5-48-48c0-20.9 13.4-38.7 32-45.3V208c0-8.8 7.2-16 16-16s16 7.2 16 16v114.7c18.6 6.6 32 24.4 32 45.3z"/></svg></span> Bed temp  <sup id="fnref2:1"><a class="footnote-ref" href="#fn:1">1</a></sup></th>
+<th><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 11a1 1 0 0 0-1 1 1 1 0 0 0 1 1 1 1 0 0 0 1-1 1 1 0 0 0-1-1m.5-9c4.5 0 4.61 3.57 2.25 4.75-.99.49-1.43 1.54-1.62 2.47.48.2.9.51 1.22.91 3.7-2 7.68-1.21 7.68 2.37 0 4.5-3.57 4.6-4.75 2.23-.5-.99-1.56-1.43-2.49-1.62-.2.48-.51.89-.91 1.23 1.99 3.69 1.2 7.66-2.38 7.66-4.5 0-4.59-3.58-2.23-4.76.98-.49 1.42-1.53 1.62-2.45-.49-.2-.92-.52-1.24-.92C5.96 15.85 2 15.07 2 11.5 2 7 5.56 6.89 6.74 9.26c.5.99 1.55 1.42 2.48 1.61.19-.48.51-.9.92-1.22C8.15 5.96 8.94 2 12.5 2Z"/></svg></span> Blæser %</th>
+<th><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 16a3 3 0 0 1-3-3c0-1.12.61-2.1 1.5-2.61l9.71-5.62-5.53 9.58c-.5.98-1.51 1.65-2.68 1.65m0-13c1.81 0 3.5.5 4.97 1.32l-2.1 1.21C14 5.19 13 5 12 5a8 8 0 0 0-8 8c0 2.21.89 4.21 2.34 5.65h.01c.39.39.39 1.02 0 1.41-.39.39-1.03.39-1.42.01A9.969 9.969 0 0 1 2 13 10 10 0 0 1 12 3m10 10c0 2.76-1.12 5.26-2.93 7.07-.39.38-1.02.38-1.41-.01a.996.996 0 0 1 0-1.41A7.95 7.95 0 0 0 20 13c0-1-.19-2-.54-2.9L20.67 8C21.5 9.5 22 11.18 22 13Z"/></svg></span> Fart</th>
+<th><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M23 15v2h-1c0 1.11-.89 2-2 2s-2-.89-2-2H6c0 1.11-.89 2-2 2s-2-.89-2-2H1v-2h22Z"/></svg></span> BuildPlate</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>225-235 <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M16.5 5c1.55 0 3 .47 4.19 1.28l-1.16 2.89A4.47 4.47 0 0 0 16.5 8C14 8 12 10 12 12.5s2 4.5 4.5 4.5c1.03 0 1.97-.34 2.73-.92l1.14 2.85A7.47 7.47 0 0 1 16.5 20 7.5 7.5 0 0 1 9 12.5 7.5 7.5 0 0 1 16.5 5M6 3a3 3 0 0 1 3 3 3 3 0 0 1-3 3 3 3 0 0 1-3-3 3 3 0 0 1 3-3m0 2a1 1 0 0 0-1 1 1 1 0 0 0 1 1 1 1 0 0 0 1-1 1 1 0 0 0-1-1Z"/></svg></span></td>
+<td>40-60 <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M16.5 5c1.55 0 3 .47 4.19 1.28l-1.16 2.89A4.47 4.47 0 0 0 16.5 8C14 8 12 10 12 12.5s2 4.5 4.5 4.5c1.03 0 1.97-.34 2.73-.92l1.14 2.85A7.47 7.47 0 0 1 16.5 20 7.5 7.5 0 0 1 9 12.5 7.5 7.5 0 0 1 16.5 5M6 3a3 3 0 0 1 3 3 3 3 0 0 1-3 3 3 3 0 0 1-3-3 3 3 0 0 1 3-3m0 2a1 1 0 0 0-1 1 1 1 0 0 0 1 1 1 1 0 0 0 1-1 1 1 0 0 0-1-1Z"/></svg></span></td>
+<td>10%</td>
+<td>15-20 mm/s</td>
+<td>Alt, men god ide med <a href="../tipstricks/#separator">separator middel</a></td>
+</tr>
+</tbody>
+</table>
+<h3 id="krav-til-printer_5">Krav til printer</h3>
+<ul>
+<li>Krøver en dualgear <a href="../printer/#extruders">extruder</a> eller ligende</li>
+<li>Kræver direct drive <a href="../printer/#extruders">extruder</a> da gummi jo giver sig skal der være kortest muligt fra <a href="../printer/#extruders">extruder</a> til <a href="../printer/#nozzle-dyse">nozzle</a> for at undgå problemer</li>
+</ul>
+<h3 id="fordele_5">Fordele</h3>
+<ul>
+<li>Super flexibelt</li>
+<li>Godt mod kemikalier</li>
+</ul>
+<h3 id="ulemper_5">Ulemper</h3>
+<ul>
+<li>Rigtig svært at printe med</li>
+<li>Skal printes meget langsomt</li>
+<li>Kræver en printer der kan printe materialet</li>
+</ul>
+<h2 id="fibre">Fibre</h2>
+<p>Tilsætning af fibre til 3D-printmaterialer kan forbedre styrke, stivhed, holdbarhed og andre mekaniske egenskaber. Fibre kan også forbedre materialets modstandsdygtighed over for temperatur, kemikalier og slid. Der er flere typer af fibre, der kan tilsættes til 3D-printmaterialer, herunder glasfiber, kulstoffiber, kevlar og aramidfiber.</p>
+<p>Glasfiber tilsættes ofte til 3D-printmaterialer, fordi det kan forbedre styrke og stivhed. Glasfiber er også relativt billig og nem at arbejde med. Tilsætning af glasfiber kan gøre materialet mere modstandsdygtigt over for brud og deformation.</p>
+<p>Kulstoffiber er en anden type fiber, der ofte bruges til at forbedre styrke og stivhed i 3D-printmaterialer. Kulstoffiber er meget stærkere end glasfiber og kan give en højere styrke-til-vægt-forhold. Tilsætning af kulstoffiber kan gøre materialet mere modstandsdygtigt over for stød og vibrationer.</p>
+<p>Kevlar og aramidfiber bruges ofte i 3D-printmaterialer, der kræver høj modstandsdygtighed over for slid, stød og kemikalier. Disse fibre er meget stærke og kan give en høj grad af slidstyrke og modstandsdygtighed over for kemikalier og slid.</p>
+<p>Der er også en række andre fibre, der kan tilsættes til 3D-printmaterialer, såsom hampfibre, træfibre og metalpartikler. Disse fibre kan give materiale forskellige egenskaber afhængigt af deres sammensætning og størrelse.</p>
+<p>Det er vigtigt at bemærke, at tilsætning af fibre til 3D-printmaterialer kan påvirke printkvaliteten og kræver ofte en justering af printerindstillingerne. Derfor er det vigtigt at bruge et filament, der er specielt designet til at indeholde fibre, og følge producentens anbefalinger og retningslinjer.</p>
+<p>Samt du skal være sikker på ved f.eks. kulfiber at du har en hærdet eller ruby nozzle, ellers vil du rigtig hurtigt opleve at din diameter på din nozzle ikke længere vil være den ønskede diameter.</p>
+<p><img alt="After CF Print" src="../assets/images/nozzleaftercfprint.jpg" /></p>
+<h3 id="anbefalinger">Anbefalinger</h3>
+<ul>
+<li>Det anbefales ved fiberholdige materialer at gå op i dysestørelse</li>
+<li>Du skal hvis det er kulfiber have et heat-break der er lavet af jern (Det lille rør mellem Hot og Cold zone på printeren)</li>
+</ul>
+<!-- 
+
+## Skabelon
+
+### Indstillinger
+
+| :fontawesome-solid-temperature-half: Nozzle temp  [^1] | :fontawesome-solid-temperature-half: Bed temp  [^1] | :material-fan: Blæser % | :material-speedometer: Fart | :material-train-car-flatbed: BuildPlate |
+| ------------------------------------------------------ | --------------------------------------------------- | ----------------------- | --------------------------- | --------------------------------------- |
+| XX :material-temperature-celsius:                      | XX :material-temperature-celsius:                   | XX%                     | XX                          | XX                                      |
+
+### Krav til printer
+
+### Fordele
+
+### Ulemper 
+
+-->
+
+<div class="footnote">
+<hr />
+<ol>
+<li id="fn:1">
+<p>Alle temperaturer er vejledende, du skal altid selv kalibrere for din printer&#160;<a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">&#8617;</a><a class="footnote-backref" href="#fnref2:1" title="Jump back to footnote 1 in the text">&#8617;</a><a class="footnote-backref" href="#fnref3:1" title="Jump back to footnote 1 in the text">&#8617;</a><a class="footnote-backref" href="#fnref4:1" title="Jump back to footnote 1 in the text">&#8617;</a><a class="footnote-backref" href="#fnref5:1" title="Jump back to footnote 1 in the text">&#8617;</a><a class="footnote-backref" href="#fnref6:1" title="Jump back to footnote 1 in the text">&#8617;</a><a class="footnote-backref" href="#fnref7:1" title="Jump back to footnote 1 in the text">&#8617;</a><a class="footnote-backref" href="#fnref8:1" title="Jump back to footnote 1 in the text">&#8617;</a><a class="footnote-backref" href="#fnref9:1" title="Jump back to footnote 1 in the text">&#8617;</a><a class="footnote-backref" href="#fnref10:1" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+</li>
+</ol>
+</div>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+        </div>
+        
+          <a href="#" class="md-top md-icon" data-md-component="top" hidden>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+            Back to top
+          </a>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.tabs", "navigation.indexes", "toc.integrate", "navigation.top"], "search": "../assets/javascripts/workers/search.208ed371.min.js", "translations": {"clipboard.copied": "Kopieret til udklipsholderen", "clipboard.copy": "Kopi\u00e9r til udklipsholderen", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "Ingen resultater fundet", "search.result.one": "1 resultat", "search.result.other": "# resultater", "search.result.placeholder": "Indtast s\u00f8geord", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.2a6f1dda.min.js"></script>
+      
+    
+  </body>
+</html>
