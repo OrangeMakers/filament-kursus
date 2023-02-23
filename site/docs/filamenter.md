@@ -207,6 +207,18 @@ I alt er TPU plastik en alsidig og holdbar elastomer, der er velegnet til mange 
 
 ## Fibre
 
+Tilsætning af fibre til 3D-printmaterialer kan forbedre styrke, stivhed, holdbarhed og andre mekaniske egenskaber. Fibre kan også forbedre materialets modstandsdygtighed over for temperatur, kemikalier og slid. Der er flere typer af fibre, der kan tilsættes til 3D-printmaterialer, herunder glasfiber, kulstoffiber, kevlar og aramidfiber.
+
+Glasfiber tilsættes ofte til 3D-printmaterialer, fordi det kan forbedre styrke og stivhed. Glasfiber er også relativt billig og nem at arbejde med. Tilsætning af glasfiber kan gøre materialet mere modstandsdygtigt over for brud og deformation.
+
+Kulstoffiber er en anden type fiber, der ofte bruges til at forbedre styrke og stivhed i 3D-printmaterialer. Kulstoffiber er meget stærkere end glasfiber og kan give en højere styrke-til-vægt-forhold. Tilsætning af kulstoffiber kan gøre materialet mere modstandsdygtigt over for stød og vibrationer.
+
+Kevlar og aramidfiber bruges ofte i 3D-printmaterialer, der kræver høj modstandsdygtighed over for slid, stød og kemikalier. Disse fibre er meget stærke og kan give en høj grad af slidstyrke og modstandsdygtighed over for kemikalier og slid.
+
+Der er også en række andre fibre, der kan tilsættes til 3D-printmaterialer, såsom hampfibre, træfibre og metalpartikler. Disse fibre kan give materiale forskellige egenskaber afhængigt af deres sammensætning og størrelse.
+
+Det er vigtigt at bemærke, at tilsætning af fibre til 3D-printmaterialer kan påvirke printkvaliteten og kræver ofte en justering af printerindstillingerne. Derfor er det vigtigt at bruge et filament, der er specielt designet til at indeholde fibre, og følge producentens anbefalinger og retningslinjer.
+
 <!-- 
 
 ## Skabelon
