@@ -25,7 +25,16 @@ markdown_extensions:
       emoji_index: !!python/name:materialx.emoji.twemoji
       emoji_generator: !!python/name:materialx.emoji.to_svg
   - tables
+  - pymdownx.superfences
+  - footnotes
 nav:
-  - Start: index.md
+  - Hjem: 
+    - index.md
+    - Printer: printer.md
+    - Ordbog: ordbog.md
+    - Hvem er jeg?: mig.md
   - Filamenter:
     - filamenter.md
+  - Kalibrering:
+    - calibration.md
+  - Tips og Tricks: tipstricks.md
