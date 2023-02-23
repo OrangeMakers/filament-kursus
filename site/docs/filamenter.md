@@ -14,7 +14,7 @@ Der findes mange former for filamenter og de fleste filamenter har nogle særlig
 
 ## Myter om temperatur
 
-Der er mange der er meget besat af om man køre korrekt temperatur, alle temperaturer er som udgangspunkt vejledende, den måde som man måler temperaturen på - på en hjemme 3D printer er med en NTC modstand, og den er faktisk ret upræcis, derfor er det rigtigt vigtigt at du selv konkludere hvad din printer køre bedst med, du bør overveje følgende parametre
+Mange mennesker er meget optagede af, om de kører med den korrekte temperatur, men alle temperaturer er som udgangspunkt vejledende. Når man måler temperaturen på en hjemme 3D-printer, bruger man typisk en NTC-modstand, som faktisk er ret upræcis. Derfor er det meget vigtigt at konkludere, hvad der fungerer bedst på din printer, og du bør overveje følgende parametre:
 
 - [x] Temperatur i det rum du står i
 - [x] Træk fra åbne vinduer?
@@ -120,9 +120,25 @@ Alt i alt er ABS plastik en alsidig plasttype med en række egenskaber, der gør
 ### Fordele
 
 * Du kan nemt eftebehandle ABS, det er nemt at bore i, du kan slibe på det og male på det uden større udfordringer
-* Kan hål meget høj temperatur
+* Har en meget høj [glas transitionstemperatur] - så kan modstå meget varme
 
 ### Ulemper
+
+* Kræver enclosure, da ABS [warper] ret meget, det er bedst hvis du er over 50 :material-temperature-celsius: for at undgå printet slipper pladen
+* Er usundt at indånde i længere tid
+* Kræver høj temperatur på nozzle derfor kan det ikke printes af printere hvor toolhead er lavet af PETG / ABS som f.eks. [Prusa](https://www.prusa3d.com/), men du vil kunne printe det med en [Voron](https://vorondesign.com/) eller [Bambu Labs](https://bambulab.com/en) printer uden problemer ABS
+
+### :warning: Sikkerheds Disclaimer
+
+ABS-plastik er generelt betragtet som sikker at bruge i hjemmeprintere, men der er nogle sundhedsrisici, som brugere skal være opmærksomme på.
+
+ABS-plastik frigiver dampe, når det opvarmes og smelter, og disse dampe kan være skadelige at indånde i større mængder over længere tid. De kan forårsage irritation af øjne, næse og hals, hovedpine, kvalme og svimmelhed. I ekstreme tilfælde kan indånding af ABS-dampe føre til sundhedsmæssige problemer som kræft og astma. Derfor er det vigtigt at have ordentlig ventilation, når man arbejder med ABS-plastik.
+
+Desuden kan ABS-plastik afgive en vis mængde støv og partikler, når det bearbejdes eller slibes. Disse partikler kan irritere øjne, næse og hals og kan være skadelige, hvis de indåndes i store mængder.
+
+For at reducere sundhedsrisikoen ved brug af ABS-plastik bør man altid anvende ordentlig ventilation, undgå indånding af dampe og partikler, og undgå at udsætte sig selv for materialet i længere tid. Det anbefales også at bruge personligt beskyttelsesudstyr, såsom handsker, øjenbeskyttelse og åndedrætsværn, når man arbejder med ABS-plastik.
+
+Generelt set kan ABS-plastik være sikkert at bruge i hjemmeprintere, så længe man tager de nødvendige forholdsregler for at beskytte sig selv mod skadelige dampe og partikler.
 
 ## ASA
 
@@ -157,6 +173,18 @@ Samme som [ABS] dog med følgende yderligere fordele
 
 Samme som [ABS]
 
+### :warning: Sikkerheds Disclaimer
+
+ABS-plastik er generelt betragtet som sikker at bruge i hjemmeprintere, men der er nogle sundhedsrisici, som brugere skal være opmærksomme på.
+
+ABS-plastik frigiver dampe, når det opvarmes og smelter, og disse dampe kan være skadelige at indånde i større mængder over længere tid. De kan forårsage irritation af øjne, næse og hals, hovedpine, kvalme og svimmelhed. I ekstreme tilfælde kan indånding af ABS-dampe føre til sundhedsmæssige problemer som kræft og astma. Derfor er det vigtigt at have ordentlig ventilation, når man arbejder med ABS-plastik.
+
+Desuden kan ABS-plastik afgive en vis mængde støv og partikler, når det bearbejdes eller slibes. Disse partikler kan irritere øjne, næse og hals og kan være skadelige, hvis de indåndes i store mængder.
+
+For at reducere sundhedsrisikoen ved brug af ABS-plastik bør man altid anvende ordentlig ventilation, undgå indånding af dampe og partikler, og undgå at udsætte sig selv for materialet i længere tid. Det anbefales også at bruge personligt beskyttelsesudstyr, såsom handsker, øjenbeskyttelse og åndedrætsværn, når man arbejder med ABS-plastik.
+
+Generelt set kan ABS-plastik være sikkert at bruge i hjemmeprintere, så længe man tager de nødvendige forholdsregler for at beskytte sig selv mod skadelige dampe og partikler.
+
 ## PA (Nylon)
 
 PA (Polyamid), også kendt som nylon, er en type termoplastisk plastik, der er kendt for sin styrke, holdbarhed og modstandsdygtighed over for slid. PA plastik er en polymer, der er sammensat af enheder af amidbindinger.
@@ -169,17 +197,25 @@ I forhold til 3D-printing kan PA være vanskeligere at printe end traditionelle 
 
 I alt er PA plastik en stærk og alsidig termoplastisk plastik, der er velegnet til mange forskellige applikationer, der kræver holdbarhed, modstandsdygtighed over for slid og kemikalier og høj styrke.
 
+PA er f.eks. det materiale snoren i din kantklipper er lavet af.
+
 ### Indstillinger
 
-| :fontawesome-solid-temperature-half: Nozzle temp  [^1] | :fontawesome-solid-temperature-half: Bed temp  [^1] | :material-fan: Blæser % | :material-speedometer: Fart | :material-train-car-flatbed: BuildPlate |
-| ------------------------------------------------------ | --------------------------------------------------- | ----------------------- | --------------------------- | --------------------------------------- |
-| XX :material-temperature-celsius:                      | XX :material-temperature-celsius:                   | XX%                     | XX                          | XX                                      |
+| :fontawesome-solid-temperature-half: Nozzle temp  [^1] | :fontawesome-solid-temperature-half: Bed temp  [^1] | :material-fan: Blæser % | :material-speedometer: Fart | :material-train-car-flatbed: BuildPlate                          |
+| ------------------------------------------------------ | --------------------------------------------------- | ----------------------- | --------------------------- | ---------------------------------------------------------------- |
+| 230-240 :material-temperature-celsius:                 | 80-90 :material-temperature-celsius:                | 50%                     | Print LANGSOMT!             | Virker på de fleste overflader<br>dog bedst med f.eks. [Dimafix] |
 
 ### Krav til printer
 
+Der er ikke nogle specielle krav til at printe Nylon på din printer
+
 ### Fordele
 
+* MEGET stærkt materiale, er super sejt - kan næsten ikke knække
+
 ### Ulemper
+
+* Suger [fugtighed], indenfor 30-60 minutter vil der være så meget fugt i det fra det rum det er i
 
 ## TPU (Gummi)
 
@@ -197,13 +233,23 @@ I alt er TPU plastik en alsidig og holdbar elastomer, der er velegnet til mange 
 
 | :fontawesome-solid-temperature-half: Nozzle temp  [^1] | :fontawesome-solid-temperature-half: Bed temp  [^1] | :material-fan: Blæser % | :material-speedometer: Fart | :material-train-car-flatbed: BuildPlate |
 | ------------------------------------------------------ | --------------------------------------------------- | ----------------------- | --------------------------- | --------------------------------------- |
-| XX :material-temperature-celsius:                      | XX :material-temperature-celsius:                   | XX%                     | XX                          | XX                                      |
+| 225-235 :material-temperature-celsius:                 | 40-60 :material-temperature-celsius:                | 10%                     | 15-20 mm/s                  | Alt, men god ide med [separator middel] |
 
 ### Krav til printer
 
+* Krøver en dualgear [extruder] eller ligende
+* Kræver direct drive [extruder] da gummi jo giver sig skal der være kortest muligt fra [extruder] til [nozzle] for at undgå problemer
+
 ### Fordele
 
+* Super flexibelt
+* Godt mod kemikalier
+
 ### Ulemper
+
+* Rigtig svært at printe med
+* Skal printes meget langsomt
+* Kræver en printer der kan printe materialet
 
 ## Fibre
 
@@ -218,6 +264,16 @@ Kevlar og aramidfiber bruges ofte i 3D-printmaterialer, der kræver høj modstan
 Der er også en række andre fibre, der kan tilsættes til 3D-printmaterialer, såsom hampfibre, træfibre og metalpartikler. Disse fibre kan give materiale forskellige egenskaber afhængigt af deres sammensætning og størrelse.
 
 Det er vigtigt at bemærke, at tilsætning af fibre til 3D-printmaterialer kan påvirke printkvaliteten og kræver ofte en justering af printerindstillingerne. Derfor er det vigtigt at bruge et filament, der er specielt designet til at indeholde fibre, og følge producentens anbefalinger og retningslinjer.
+
+Samt du skal være sikker på ved f.eks. kulfiber at du har en hærdet eller ruby nozzle, ellers vil du rigtig hurtigt opleve at din diameter på din nozzle ikke længere vil være den ønskede diameter.
+
+![After CF Print](assets/images/nozzleaftercfprint.jpg)
+
+### Anbefalinger
+
+* Det anbefales ved fiberholdige materialer at gå op i dysestørelse
+* Du skal hvis det er kulfiber have et heat-break der er lavet af jern (Det lille rør mellem Hot og Cold zone på printeren)
+
 
 <!-- 
 
@@ -246,3 +302,7 @@ Det er vigtigt at bemærke, at tilsætning af fibre til 3D-printmaterialer kan p
 [PETG]: #petg
 [ASA]: #asa
 [glas transitionstemperatur]: ordbog.md#glas-transitionstemperaturen
+[warping]: ordbog.md#warping
+[Dimafix]: tipstricks.md#bindemiddel
+[extruder]: printer.md#extruders
+[nozzle]: printer.md#nozzle-dyse
